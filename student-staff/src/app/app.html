@@ -1,0 +1,26 @@
+<div class="container">
+  <button (click)="onClickStudent()">Student</button>
+  <button (click)="onClickStaff()">Staff</button>
+
+  <div *ngIf="showStudents" class="buttons-list">
+    <h3>Students</h3>
+    <button *ngFor="let student of students" (click)="onSelectPerson(student)">
+      {{ student }}
+    </button>
+  </div>
+
+  <div *ngIf="showStaffs" class="buttons-list">
+    <h3>Staffs</h3>
+    <button *ngFor="let staff of staffs" (click)="onSelectPerson(staff)">
+      {{ staff }}
+    </button>
+  </div>
+
+  <div *ngIf="selectedMessage" class="message">
+    {{ selectedMessage }}
+  </div>
+
+  <button (click)="routingValidation(33)">Routing after validation</button>
+</div>
+
+<router-outlet/>

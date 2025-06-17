@@ -1,0 +1,38 @@
+.staff-container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.staff-container h2 {
+  font-size: 2.5rem;
+  color: #e65100;
+  margin-bottom: 30px;
+}
+
+.staff-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.staff-btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #fb8c00;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.staff-btn:hover {
+  background-color: #e65100;
+  transform: scale(1.05);
+}
